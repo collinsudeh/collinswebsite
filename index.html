@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive website</title>
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 700px;
+            border: 3px solid darkred;
+            border-radius: 4px;
+        }
+        .bars{
+            display:none;
+        }
+
+        .container .header {
+            width: 100%;
+            height: 70px;
+
+        }
+
+        /* .bars{
+        width: 10%;
+        margin-top: 12px;
+        height: 40px;
+        border: 2px solid;
+    display: inline-block;
+    } */
+        .container .header .logo {
+            width: 14%;
+            height: 60px;
+            background-image: url('images/logo.png');
+            text-shadow: 3px;
+            background-size: cover;
+            display: inline-block;
+            margin-left: 70px;
+        }
+
+        .container .navigation {
+            width: 50%;
+            height: 60px;
+            display: inline-block;
+            margin-left: 17px;
+            vertical-align: top;
+            margin-top: -3px;
+            /* border: 2px solid; */
+        }
+
+        }
+
+        .container .navigation ul {
+            list-style-type: none;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .container .navigation ul li {
+            width: 15%;
+            height: 20px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 28px;
+            /* background-color: darkgrey; */
+            border-radius: 6px;
+            margin-left: -8px;
+            margin-top: 5px;
+        }
+
+        .container .navigation ul li:hover {
+            color: blueviolet;
+            background-color: saddlebrown;
+        }
+
+        .container .navigation ul li a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .silder {
+            width: 65%;
+            height: 200px;
+
+            background-image: url('images/slider1.jpg');
+            background-size: cover;
+            margin: 7px auto;
+        }
+
+        .design {
+            width: 40%;
+            height: 170px;
+            padding: 8px;
+            margin-left: 480px;
+            background-color: whitesmoke
+        }
+
+        .body {
+            width: 65%;
+            height: 650px;
+
+            margin: 0 auto;
+        }
+
+        .body .box1 {
+            width: 24%;
+            height: 190px;
+            vertical-align: top;
+            display: inline-block;
+            border-radius: 5px;
+            margin-right: -8px;
+            background-color: rgb(9, 150, 9);
+        }
+
+        .body .box1 h3 {
+            color: white;
+            font-style: oblique;
+            padding-left: 8px;
+
+        }
+
+        .body .box1 p {
+            color: white;
+            font: 12px;
+            padding-left: 6px;
+        }
+
+        .body .box2 h3 {
+            color: white;
+            font-style: inherit;
+            padding-left: 8px;
+        }
+
+        .body .box2 p {
+            color: white;
+            font: 12px;
+            padding-left: 9px;
+        }
+
+        .body .box3 h3 {
+            color: white;
+            font-style: initial;
+            padding-left: 9px;
+        }
+
+        .body .box3 p {
+            color: white;
+            font: 12px;
+            padding-left: 9px;
+        }
+
+        .body .box4 h3 {
+            color: white;
+            font-style: unset;
+            padding-left: 12px;
+        }
+
+        .body .box4 p {
+            color: white;
+            font: 12px;
+            padding-left: 9px;
+        }
+
+        .body .box2 {
+            width: 25%;
+            height: 190px;
+            vertical-align: top;
+            background-color: peru;
+            display: inline-block;
+            border-radius: 5px;
+            margin-right: -6px;
+
+        }
+
+        .body .box3 {
+            width: 25%;
+            height: 190px;
+            vertical-align: top;
+            background-color: purple;
+            display: inline-block;
+            border-radius: 5px;
+            margin-right: -7px;
+
+        }
+
+        .body .box4 {
+            width: 25%;
+            height: 190px;
+            vertical-align: top;
+            background-color: rgb(206, 98, 9);
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .body .link_btn {
+            width: 45%;
+            height: 28px;
+            background-color: whitesmoke;
+            border-radius: 4px;
+            color: black;
+            margin-left: 5px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            font: 18px;
+        }
+
+        .container .project {
+            width: 40%;
+            height: 50px;
+
+            display: inline-block;
+        }
+
+        .container .project p {
+            font-size: 24px;
+            padding-top: -4px;
+            vertical-align: top;
+        }
+
+        .container .project1 {
+            display: inline-block;
+            width: 15%;
+            height: 22px;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            vertical-align: top;
+            text-align: right;
+            margin-left: 370px;
+            padding: 20px;
+            margin-top: 4px;
+            margin-right: -6px;
+        }
+
+        .container .project1 a {
+            text-decoration: none;
+            color: whitesmoke;
+            text-align: center;
+            padding-left: -10px;
+        }
+
+        .container .image1 {
+            width: 25%;
+            height: 150px;
+            border-radius: 5px;
+            display: inline-block;
+            background-image: url('images/box1.jpg');
+            background-size: cover;
+            position: relative;
+            margin: 0;
+        }
+
+        .container .image2 {
+            width: 25%;
+            height: 150px;
+            border-radius: 5px;
+            display: inline-block;
+            background-image: url('images/box2.jpg');
+            background-size: cover;
+            position: relative;
+        }
+
+        .container .image3 {
+            width: 23%;
+            height: 150px;
+            border-radius: 5px;
+            display: inline-block;
+            background-image: url('images/box3.jpg');
+            background-size: cover;
+            position: relative;
+        }
+
+        .container .image4 {
+            width: 25%;
+            height: 150px;
+            border-radius: 5px;
+            display: inline-block;
+            background-image: url('images/box4.jpg');
+            background-size: cover;
+            position: relative;
+        }
+
+        .container .content1 {
+            width: 24%;
+            height: 90px;
+
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .container .content2 {
+            width: 24%;
+            height: 90px;
+
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .container .content3 {
+            width: 25%;
+            height: 90px;
+
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .container .content4 {
+            width: 25%;
+            height: 90px;
+
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .container .content4 P {
+            font-size: 10px;
+            padding: -3px;
+        }
+
+        .container .content3 P {
+            font-size: 10px;
+        }
+
+        .container .content2 P {
+            font-size: 10px;
+        }
+
+        .container .content1 P {
+            font-size: 10px;
+        }
+
+        .container .content1 P {
+            font-size: 10px;
+        }
+
+        .body .article1 {
+            width: 24%;
+            height: 120px;
+
+            display: inline-block;
+        }
+
+        .body .article1 p {
+            font-size: 10px;
+        }
+
+        .body .article1 span {
+            font-size: 14px;
+        }
+
+        .body .article2 {
+            width: 24%;
+            height: 120px;
+
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .body .article3 {
+            width: 24%;
+            height: 120px;
+
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .article3 ul li a {
+            text-decoration: none;
+            color: rgb(206, 98, 9);
+        }
+
+        .body .article4 {
+            width: 24%;
+            height: 120px;
+
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .article4 input {
+            width: 80%;
+            margin: 3px;
+        }
+
+        .article4 h4 {
+            font-size: 11px;
+        }
+
+        .article4 textarea {
+            position: absolute;
+            ;
+            resize: none;
+        }
+
+        .container .article2 .twiteer {
+            width: 69%;
+            height: 68px;
+            background-color: rgb(231, 223, 223);
+            border-radius: 5px;
+            font-size: 10px;
+            margin: 0px;
+            vertical-align: top;
+
+        }
+
+
+
+        @media only screen and (min-width:300px) and (max-width:700px) {
+           
+            .container {
+	
+	min-height: 2346px;
+	
+}   
+            .container .header .logo {
+	width: 15%;
+	height: 19px;
+    
+    
+	margin-left: -2px;
+}
+.container .navigation ul li a {
+    
+    
+	font-size: 10px;
+	margin: 6px;
+}
+.container .navigation {
+	width: 88%;
+
+	vertical-align: top;
+	margin-top: -34px;
+	
+	margin-left: 40px;
+}
+.container .navigation ul li {
+	width: 11%;
+    background-color: none;
+    
+}
+.silder {
+	width: 98%;
+    
+    
+}
+.body .box1 {
+	width: 100%;
+    
+    
+	margin-left: -35px;
+}
+.body .box2 {
+	width: 100%;
+    
+	margin-left: -35px;
+	margin-top: 10px;
+} 
+.body .box3 {
+	width: 100%;
+    
+    
+	margin-left: -35px;
+	margin-top: 12px;
+}
+.body .box4 {
+	width: 100%;
+    
+    
+	margin-left: -36px;
+	margin-top: 9px;
+}
+.container .project {
+	width: 51%;
+    
+    
+}
+.container .image1 {
+	width: 73%;
+    
+    
+	margin-left: -43px;
+}
+.container .image2 {
+	width: 44%;
+	
+}
+.container .image3 {
+	width: 70%;
+	margin-left: -44px;
+}
+.container .image4 {
+	width: 47%;
+	
+    
+}
+.container .project1 {
+	width: 59%;
+	margin-left: 138px;
+	margin-top: -35px;
+
+}
+.container .content1 {
+	width: 75%;
+	
+}
+.container .content2 {
+	width: 74%;
+	
+}
+.container .content3 {
+	width: 75%;
+	
+}
+.container .content4 {
+	width: 85%;
+	
+}
+.body .article1 {
+	width: 89%;
+	
+}
+.body .article2 {
+	width: 77%;
+	
+}
+.body .article3 {
+	width: 76%;
+	
+}
+.body .article4 {
+	width: 97%;
+	margin-top: 12px;
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="header">
+            <div class="logo">
+
+            </div>
+
+            <div class="navigation" id="navigation">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="portofolio.html">Porfolio</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+
+                </ul>
+            </div>
+            <div class="bars">
+                <i class="fa fa-bars" id="bars"></i>
+            </div>
+        </div>
+
+        <!-- silider -->
+        <div class="silder">
+            <div class="design">
+                <h3>Responsive Web</h3>
+                <h3>SOLUTION</h3>
+                <P>Enugu West youth Project
+                    is sponsored by ikeoha </P>
+            </div>
+        </div>
+
+        <div class="body">
+
+            <div class="box1">
+                <h3>INNOVATION</h3>
+                <p>One of the great challenges in the ecology of
+                    infectious diseases is to understand what drives the </p>
+                <div>
+                    <a class="link_btn" href="£">Read More</a>
+                </div>
+            </div>
+            <div class="box2">
+                <h3>SUPPORT</h3>
+                <P>Hipposideros larvatus and one Alphacoronavirus
+                    in Hipposiderosarmiger.Interes,
+                    East A</P>
+                <div>
+                    <a class="link_btn" href="£">Read More</a>
+                </div>
+            </div>
+            <div class="box3">
+                <H3>CAREER</H3>
+                <P>pushing forward the hypothesis of a Betacoronavirus spill-over from Hipposideridae to Rhinolophidae
+                    and </P>
+                <div>
+                    <a class="link_btn" href="£">Read More</a>
+                </div>
+            </div>
+            <div class="box4">
+                <h3>PARTNER</h3>
+                <p>investigate the role that bats played in its emergence, we amplified coronavirus sequences from bat
+                    species </p>
+                <div>
+                    <a class="link_btn" href="£">Read More</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <p>Our Project</p>
+            </div>
+            <div class="project1">
+                <a href="£">All Project <i class="fa fa-arrow-right"></i></a>
+            </div>
+
+            <div class="image1">
+
+            </div>
+            <div class="image2">
+
+            </div>
+            <div class="image3">
+
+            </div>
+            <div class="image4">
+
+            </div>
+            <div class="content1">
+                <h4>NEWS CAST </h4>
+                <P>The family is a socially recognized unit of two or more people staying </P>
+            </div>
+            <div class="content2">
+                <h4>INFO</h4>
+
+                <P>The family has undergone several changes with the advancement of civilization.</P>
+            </div>
+            <div class="content3">
+                <h4>BLOG</h4>
+
+                <P>Management is primarily concerned with the creation and use </P>
+            </div>
+            <div class="content4">
+                <h6>PROGRAMMES</h6>
+                <P>. By this it improves the utilization level of its resources and satisfaction of its members.
+
+                </P>
+            </div>
+
+            <div class="article1">
+                <h4>Lastest post</h4>
+                <span>simpilify</span>
+                <p>The family has undergone several changes with the advancement of</p>
+            </div>
+            <div class="article2">
+                <h4>TWITEER</h4>
+                <div class="twiteer">
+                    While functioning in a particular society, the members learn to work and cooperate with others in
+                    the larger social group, while doing
+                </div>
+            </div>
+            <div class="article3">
+                <h4>List Widget</h4>
+                <ul>
+                    <li><a href="£">home</a></li>
+                    <li><a href="£">news</a></li>
+                    <li><a href="£">sport</a></li>
+                    <li><a href="£">our Blog</a></li>
+
+                </ul>
+            </div>
+            <div class="article4">
+                <h4>Quick contact</h4>
+                <form>
+                    <label>Email *</label>
+                    <input type="email" placeholder="">
+                    <label> Message us</label>
+                    <br> <textarea placeholder=""></textarea>
+                </form>
+            </div>
+
+
+
+
+
+        </div>
+
+
+        <!-- <script>
+let man = document.getElementById('bars');
+let bet = document.getElementById('navigation');
+
+man.onclick = function() {
+    console.log(bet);
+if (bet.style.display=='block')
+bet.style.display=='none'
+
+else{
+    bet.style.display=='block';
+}
+
+
+</script>
+
+let mobile = document.getElementById('bars');
+let bet = document.getElementById('navigation');
+
+mobile.onclick = function(){
+      console.log(bet)
+    
+        if(bet.style.display == "block"){
+         bet.style.display = "none";
+        }
+        else{
+         bet.style.display = "block";
+        }
+        console.log(bet.style.display)
+    
+
+} -->
+
+        <!-- <script src="java.js"></script> -->
+    </div>
+</body>
+
+</html>

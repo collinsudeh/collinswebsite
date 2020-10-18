@@ -1,0 +1,471 @@
+
+.container {
+    width: 100%;
+    height: 1600px;
+
+}
+
+.container .header {
+    width: 80%;
+    height: 60px;
+    background-color: whitesmoke;
+    margin-left: 90px;
+}
+
+.container .navigation {
+    width: 50%;
+    /* height: 50px; */
+    background-color: whitesmoke;
+    display: inline-block;
+}
+
+.container .navigation ul {
+    list-style-type: none;
+}
+
+.container .navigation ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.container .navigation ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.container .icon {
+    width: 25%;
+    height: 70px;
+    display: inline-block;
+    margin-left: 180px;
+
+}
+
+.container .icon ul a {
+    color: black;
+    margin: 6px;
+}
+
+.container .icon ul {
+    margin: 6px;
+}
+
+.container .icon1 {
+    width: 25%;
+    height: 30px;
+    display: inline-block;
+
+
+}
+
+.container .icon1 ul a {
+    color: black;
+    margin: 6px;
+}
+
+.container .icon1 ul {
+    margin: 6px;
+}
+
+.container .box {
+    width: 40%;
+    height: 40px;
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 90px;
+}
+
+.container .box ul {
+    list-style-type: none;
+}
+
+.container .box ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.container .box ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.container .search {
+    width: 5%;
+    height: 50x;
+
+    display: inline-block;
+    margin-left: 310px;
+
+}
+
+.container .search a {
+    color: black;
+}
+
+.container .content {
+    width: 60%;
+    height: 1100px;
+
+    margin-left: 150px;
+}
+
+.container .image1 img {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.container .image1 p {
+    display: inline-block;
+    font-size: 9px;
+}
+
+.container .image2 {
+    width: 55%;
+    height: 285px;
+
+    background-image: url('images/image1.jpeg');
+    position: relative;
+    margin-left: 150px;
+}
+
+.container .content h2 {
+    text-align: center;
+
+}
+
+.container .content p {
+    font-size: 12px;
+}
+
+.container .content .box1 {
+    width: 55%;
+    height: 65px;
+    border: none;
+    margin: 0px;
+    margin-left: 90px;
+    border-left: 1px solid blue;
+}
+
+.container .content a {
+    color: blue;
+}
+
+.container .content .image3 {
+    width: 26%;
+    height: 260px;
+    display: inline-block;
+
+}
+
+.container .content .image4 {
+    width: 26%;
+    height: 260px;
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+.container .comment {
+    width: 69%;
+    height: 45px;
+    margin-left: 19px;
+
+    border-top: 2px solid darkgrey;
+}
+
+.container .login {
+    width: 100%;
+    height: 55px;
+    margin-bottom: -10px;
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    margin-top: 25px;
+}
+
+.container .login a {
+    text-align: center;
+    display: inline;
+}
+
+.container .login p {
+    text-align: center;
+    display: inline;
+}
+
+.container .logininfo {
+    width: 45%;
+    height: 30px;
+
+    margin-left: 212px;
+
+}
+
+.container .login1 {
+    width: 100%;
+    height: 35px;
+
+    background-color: blue;
+    margin-top: 34px;
+
+}
+
+.container .login1 a {
+    color: white;
+    margin: 20px;
+    font-size: 17px;
+}
+
+.container .login1 i {
+    margin: 9px;
+}
+
+.container .picture {
+    width: 100%;
+    height: 75px;
+
+    margin: 0;
+}
+
+.container .article {
+    width: 100%;
+    height: 190px;
+    background-color: darkgrey;
+    margin-top: 0px;
+}
+
+.article .article2 {
+    margin-top: 22px;
+    margin-left: 38px;
+    display: inline-block;
+    vertical-align: top;
+
+    background-size: cover;
+}
+
+.article .article3 {
+    width: 35%;
+    height: 150px;
+
+    display: inline-block;
+}
+
+.article3 h5 {
+    color: white;
+}
+
+.article3 p {
+    color: white;
+}
+
+.hub {
+    width: 40%;
+    height: 140px;
+
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 35px;
+}
+
+.hub .formcontrol input {
+    margin: 5px;
+    background-color: darkgrey;
+}
+
+.hub .formcontrol input [type="value"] {
+    width: 40%;
+    background-color: blue;
+    border: 5px solid black;
+}
+
+.hub form h4 {
+    color: white;
+}
+
+.container .footer {
+    width: 60%;
+    height: 80px;
+    margin-left: 28px;
+}
+.formcontrol button [type="submit"] {
+    width: 50%;
+    height: 70px;
+                
+}
+.bars{
+    display: none;
+}
+    
+    
+
+@media only screen and (min-width:300px) and (max-width:700px) {
+
+    .container .header {
+        width: 100%;
+        margin-left: -4px;
+
+    }
+
+    .container .navigation {
+        width: 100%;
+
+    }
+
+    .container .navigation ul li {
+        display: inline-block;
+        margin: 0 3px;
+    }
+
+    .container .icon {
+        display: none;
+    }
+
+    .container .box {
+        width: 60%;
+        margin-top: -2px;
+        margin-left: -17px;
+    }
+
+    .container .box ul li a {
+        font-size: 13px;
+    }
+
+    .container .box ul li {
+        margin: 0 5px;
+    }
+
+    .container .search {
+        margin-top: -22px;
+        vertical-align: top;
+    }
+
+    .container .image1 img {
+        margin-left: -120px;
+        margin-top: -16px;
+    }
+
+    .enugu {
+
+        width: 353px;
+        height: 159px;
+        margin-left: -149px;
+    }
+
+    .container .image2 {
+        width: 151%;
+        height: 181;
+        margin-left: -131px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .enugu1 {
+
+        width: 154%;
+        height: 114px;
+        /* border: 2px solid; */
+        margin-left: -121px;
+        margin-top: -95px;
+    }
+
+    .container .content .box1 {
+        width: 130%;
+        height: 77px;
+        margin-left: -102px;
+        margin-top: -55px;
+    }
+
+    .container .box2 {
+        width: 150%;
+        height: 361px;
+        /* border: 3px solid black; */
+        margin-left: -126px;
+        margin-top: 10px;
+    }
+
+    .container .icon1 {
+        width: 81%;
+        height: 30px;
+        display: inline-block;
+        margin-left: -172px;
+
+    }
+
+    .container .content .image3 {
+        width: 67%;
+        height: 260px;
+        display: inline-block;
+        margin-left: -107px;
+    }
+
+    .container .content .image4 {
+        width: 71%;
+        height: 260px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .container .comment {
+        width: 74%;
+        height: 45px;
+        margin-left: -1px;
+        border-top: 2px solid darkgrey;
+    }
+
+    .container .login {
+        width: 168%;
+        height: 55px;
+        margin-bottom: -10px;
+        border: 2px solid whitesmoke;
+        background-color: whitesmoke;
+        margin-top: 25px;
+        margin-left: -155px;
+    }
+
+    .container .login1 {
+        width: 178%;
+        background-color: blue;
+        margin-top: 25px;
+        margin-left: -171px;
+    }
+
+    .container .picture {
+        width: 162%;
+        margin-left: -144px;
+    }
+
+    .article .article2 {
+        margin-top: 20px;
+        width: 13%;
+    }
+
+    .article .article3 {
+        width: 89%;
+
+        display: block;
+    }
+
+    .container .article {
+        width: 162%;
+        height: 510px;
+        margin-left: -146px;
+    }
+
+    .article .article2 {
+        margin-top: 20px;
+        width: 70%;
+
+    }
+
+    .hub {
+        margin-top: -53px;
+    }
+
+    .container .footer {
+        margin-top: 30px;
+    }
+
+
+    .container .footer {
+        width: 88%;
+        
+    }

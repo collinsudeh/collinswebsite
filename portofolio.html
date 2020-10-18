@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(154, 206, 10);
+            /* background-color:rgba(000, 000, 0.1); */
+
+        }
+
+        .container {
+            width: 100%;
+            min-height: 400px;
+
+        }
+
+        .header {
+            width: 100%;
+            min-height: 75px;
+
+        }
+
+        .header h3 {
+            text-align: center;
+            color: black;
+            font-size: 30px;
+            font-style: inherit;
+        }
+
+        .header p {
+            font: x-large;
+            color: black;
+            text-align: center;
+        }
+
+        .container .body {
+            width: 100%;
+            height: 400px;
+            display: inline-block;
+            /* background-color: coral; */
+            opacity: 9px;
+
+        }
+
+        .container .box1 {
+            width: 25%;
+            height: 40%;
+
+            display: inline-block;
+            vertical-align: top;
+            margin: 5px;
+            margin-left: 170px;
+
+
+        }
+
+        .container .box2 {
+            width: 25%;
+            height: 40%;
+
+            display: inline-block;
+            vertical-align: top;
+            margin: 5px
+        }
+
+        .container .box3 {
+            width: 25%;
+            height: 40%;
+
+            display: inline-block;
+            vertical-align: top;
+            margin: 5px;
+
+        }
+
+        .container .box4 {
+            width: 25%;
+            height: 40%;
+            display: inline-block;
+            margin-left: 70px;
+
+
+        }
+
+        .container .box5 {
+            width: 25%;
+            height: 40%;
+
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 107px;
+        }
+
+        .container .box6 {
+            width: 25%;
+            height: 40%;
+            margin-left: 13px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .container .box7 {
+            width: 25%;
+            height: 40%;
+
+            display: inline-block;
+            margin-left: 20px;
+            margin-top: 21px;
+            margin-right: -30px;
+
+
+        }
+
+        .container .box8 {
+            width: 25%;
+            height: 55%;
+
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 150px;
+            margin-top: 13px;
+        }
+
+        .container .box9 {
+            width: 25%;
+            height: 40%;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 13px;
+        }
+
+
+
+        ******************************************************** .container .body .box1 img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        .container .navigation {
+            width: 70%;
+            height: 60px;
+            /* background-color: black; */
+            margin-left: 170px;
+            padding: 5px;
+            display: none;
+            border-radius: 7px;
+
+        }
+
+        .container .navigation ul {
+            list-style: none;
+
+
+        }
+
+        .container .navigation ul li {
+            display: block;
+            /* vertical-align: top; */
+            text-align: center;
+            width: 10%;
+
+
+            background-color: orangered;
+            border-radius: 8px;
+
+            margin-left: -186px;
+            text-decoration: none;
+            margin-top: -87px;
+            height: 46px;
+        }
+
+        .container .navigation ul li:hover {
+
+
+
+            background-color: skyblue;
+            border-radius: 8px;
+
+
+
+        }
+
+        .container .navigation ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            margin-left: 4px;
+        }
+
+
+        .container .navigation ul li span {
+            color: yellow;
+            text-align: center;
+        }
+
+
+        .footer {
+            text-align: center;
+            color: black;
+            font-size: 14px;
+        }
+
+        .container .body .box2 img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        .container .body .box3 img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        .container .body .box4 img {
+            width: 100%;
+            height: 100%;
+            margin-left: 100px;
+            border-radius: 9px;
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        .container .body .box5 img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        .container .body .box6 img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        .container .body .box7 img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+            margin-left: 150px;
+
+        }
+
+        .container .body .box8 img {
+            width: 100%;
+            height: 100%;
+            margin-left: 33px;
+            border-radius: 5px;
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        .container .body .box9 img {
+            width: 100%;
+            height: 100%;
+            margin-left: 45px;
+            border-radius: 5px;
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .bars {
+            width: 5%;
+            height: 40px;
+            font-size: 20px;
+            color: black;
+            /* border: 2px solid; */
+            margin-left: 31px;
+            margin-bottom: -20px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media only screen and (min-width:300px) and (max-width:700px) {
+
+            .container .box1 {
+                width: 45%;
+                /* height: 40%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px; */
+                margin-left: 28px;
+            }
+
+            .container .box2 {
+                width: 39%;
+                /* height: 40%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px; */
+                margin-left: 2px;
+            }
+
+            .container .box3 {
+                width: 44%;
+                float: right;
+                margin-left: 25px;
+            }
+
+            .container .box4 {
+                width: 45%;
+
+
+                margin-left: -76px;
+
+
+            }
+
+            .container .box5 {
+                width: 45%;
+
+
+                margin-left: 23px;
+            }
+
+            .container .box6 {
+                width: 42%;
+            }
+
+            .container .box7 {
+                width: 48%;
+                margin-left: -129px;
+
+
+            }
+
+            .container .box8 {
+                width: 42%;
+
+            }
+
+            .container .box9 {
+                width: 45%;
+
+
+                margin-left: 147px;
+            }
+            .container .navigation ul li {
+    
+                
+	width: 115%;
+    
+    
+}
+.container .navigation {
+    
+    	margin-top: 234px;
+}
+.container .navigation ul li:hover {
+    background-color: blue;
+
+                
+	color: yellow;
+    
+    
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h3>SAINT THIAGO SNACKS</h3>
+            <P>GOOD SNACKS EQUALS GOOD HEALTH</P>
+        </div>
+        <!-- BODY -->
+        <div class="body">
+            <!-- 1 -->
+            <div class="box1">
+                <a href="">
+
+                    <img src="rice 4.jpg" width="100%" height="100%" alt="picture">
+
+                </a>
+
+            </div>
+            <!-- 2 -->
+            <div class="box2">
+                <a href="">
+
+                    <img src="pie 1.jpg" width="100%" height="100%" alt="picture">
+
+                </a>
+
+            </div>
+            <!-- 3 -->
+            <div class="box3">
+                <a href="">
+
+                    <img src="pie 2.jpg" width="100%" height="100%" alt="picture">
+
+                </a>
+
+            </div>
+            <br>
+            <!-- 4 -->
+            <div class="box4">
+                <a href="">
+
+                    <img src="pie 3.jpg" width="100%" height="100%" alt="picture">
+
+                </a>
+
+            </div>
+            <!-- 5 -->
+            <div class="box5">
+                <a href="">
+
+                    <img src="pie 4.jpg" width="100%" height="100%" alt="picture">
+
+                </a>
+
+            </div>
+            <!-- 6 -->
+            <div class="box6">
+                <a href="">
+
+                    <img src="Koala.jpg" width="100%" height="100%" alt="picture">
+
+                </a>
+
+            </div>
+
+            <!-- 7 -->
+            <div class="box7">
+                <a href="">
+
+                    <img src="Tulips.jpg" width="100%" height="100%" alt="picture">
+
+                </a>
+
+            </div>
+            <!-- 8 -->
+            <div class="box8">
+                <a href="">
+
+                    <img src="Lighthouse.jpg" width="100%" height="100%" alt="picture">
+
+                </a>
+
+            </div>
+            <!-- 9 -->
+            <div class="box9">
+                <a href="">
+                    <img src="Chrysanthemum.jpg" width="100%" height="100%" alt="">
+                </a>
+            </div>
+
+            <!-- navigation section -->
+            <div class="bars" id="bars">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="navigation" id="navigation">
+                <ul>
+                    <li><a href="index.html">Home page</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+
+                    <li><a href="contactus.html">contact</a></li>
+                    <li><a href="portofolio.html"><span>Portfolio</span></a></li>
+                    <li><a href="blog.html">Blog</a></li>
+
+
+
+                </ul>
+            </div>
+
+            <!-- footer scetion -->
+            <div class="footer">
+                <p>&copy;Enugu West Youth Reserved Copy Right Statement........</p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="java.js"></script>
+    <!-- <script>
+
+
+let mobile = document.getElementById('bars');
+let bet = document.getElementById('navigation');
+
+mobile.onclick = function(){
+      console.log(bet)
+    
+        if(bet.style.display == "block"){
+         bet.style.display = "none";
+        }
+        else{
+         bet.style.display = "block";
+        }
+        console.log(bet.style.display)
+    
+
+}
+
+
+
+
+</script> -->
+</body>
+
+</html>

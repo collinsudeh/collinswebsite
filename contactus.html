@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+
+    <style>
+        .container {
+            width: 80%;
+            height: 520px;
+
+            margin: 0 auto;
+        }
+
+        .container .contact {
+            width: 55%;
+            height: 420px;
+
+            display: inline-block;
+            vertical-align: top;
+
+
+        }
+
+        .container .contact h3 {
+            text-align: center;
+        }
+
+        .container .contact p {
+            padding-left: 270px;
+        }
+
+        .container .form {
+            width: 30%;
+            height: 420px;
+            display: inline-block;
+        }
+
+        .container .header {
+            width: 100%;
+            height: 60px;
+
+            text-align: center;
+        }
+
+        .container form input {
+            width: 90%;
+            height: 30px;
+            margin: 7px;
+            margin-left: 0px;
+
+        }
+
+        .container form textarea {
+            width: 70%;
+            height: 80px;
+            resize: none;
+            margin: 0;
+
+
+        }
+
+        .container form [value="sumbit"] {
+            width: 27%;
+            height: 30px;
+            display: block;
+            background-color: black;
+            color: white;
+            border-radius: 7px;
+            margin: 5px;
+            margin-left: 150px;
+
+        }
+
+        .container .navigation {
+            width: 80%;
+            height: 38px;
+            /* background-color: black; */
+            display: inline-block;
+            margin-top: 18px;
+            margin-left: 100px;
+        }
+
+        .container .navigation ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .container .navigation ul li {
+            display: inline-block;
+            color: white;
+            margin: 0 22px;
+
+        }
+
+        .navigation ul li a {
+            text-decoration: none;
+        }
+
+        .navigation ul a span {
+            color: yellow;
+        }
+        .navigation ul li:hover{
+            color: green;
+            background-color: orangered;
+
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .bars {
+            width: 3%;
+
+            display: block;
+        }
+
+        @media only screen and (min-width:300px) and (max-width:700px) {
+
+            .container {
+                width: 100%;
+                /* height: 520px;
+    
+            margin: 0 auto;
+            } */
+            }
+
+            .container .contact {
+                /* width: 55%; */
+                /* height: 420px; */
+                margin-left: -16px;
+                /* display: inline-block; */
+                /* vertical-align: top; */
+                margin-top: 320px;
+                margin-top: 443px;
+            }
+
+            .container .contact p {
+                padding-left: 19px;
+                font-size: 21px;
+            }
+
+            .container .contact h3 {
+                font-size: 30px;
+            }
+
+
+            .container form input {
+                width: 310px;
+                /* height: 30px;
+           margin: 7px;
+           
+           /* margin-left: 0px; */
+                /* margin-left: -20px; */
+                margin-top: 30px;
+            }
+
+            .container form textarea {
+                width: 230px;
+                border-radius: 5px;
+                /* height: 80px;
+           resize: none;
+           margin: 0; */
+            }
+
+            .container .header {
+
+                margin-top: 110px;
+
+            }
+
+            .container form [value="sumbit"] {
+                width: 90%;
+                /* height: 30px;
+        display: block;
+        background-color: black;
+        color: white;
+        border-radius: 7px;
+        margin: 5px; */
+                margin-left: 20px;
+
+            }
+
+            .form {
+                margin-left: -165px;
+            }
+
+            .navigation ul li a {
+                text-decoration: none;
+                font-size: 12px;
+                margin-left: -30px;
+            }
+        }
+
+        .container .navigation {
+            width: 40%;
+            margin-left: 4px;
+            /* height: 38px;
+        background-color: black; */
+        }
+
+        .container .navigation ul li {
+            width: 114%;
+            height: 38px;
+            background-color: orange;
+            display: block;
+            margin-top: -76px;
+            margin-left: -47px;
+            margin-bottom: -51px;
+        }
+
+        .container .navigation ul li:hover {
+            width: 114%;
+            border-radius: 14px;
+            height: 38px;
+            background-color: olive;
+            
+            bo
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>CHINONSO C.</h3>
+        </div>
+        <div class="contact">
+            <h3>contact</h3>
+            <P>E-mail:chinonsoudeh96@gmail.com</P>
+            <p>tel:09081631185</p>
+        </div>
+
+        <div class="form">
+            <form>
+                <div class="controlform">
+                    <label>first Name</label>
+                    <input type="text" required placeholder="">
+                </div>
+                <div class="controlform">
+                    <label>Email</label>
+                    <input type="email" required placeholder="">
+                </div>
+                <div class="controlform">
+                    <label>subject</label>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="controlform">
+                    <label>leave us a message</label>
+                    <textarea placeholder=""></textarea>
+                </div>
+                <div class="controlform">
+                    <input type="submit" value="sumbit">
+                </div>
+            </form>
+
+        </div>
+
+
+
+        <!-- navigation -->
+        <div class="bars" id="bars">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="navigation" id="navigation">
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+
+                <li><a href="aboutus.html"><span>About</span></a></li>
+                <li><a href="contactus.html">CONTACT</a></li>
+                <li><a href="portofolio.html">Portfolio</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+            </ul>
+        </div>
+
+
+
+
+        <!-- footer -->
+        <div class="footer">
+            <p>&copy;Enugu West Youth Empowerment programm </p>
+        </div>
+        <script src="java.js"></script>
+
+        <script>
+
+            let mobile = document.getElementById('bars');
+            let bet = document.getElementById('navigation');
+
+            mobile.onclick = function () {
+                console.log(bet)
+
+                if (bet.style.display == "none") {
+                    bet.style.display = "block";
+                }
+                else {
+                    bet.style.display = "none";
+                }
+                console.log(bet.style.display)
+
+
+            /*
+             let mobile = document.getElementById('bars');
+                   let box = document.getElementById('navigation');
+            
+                   mobile.onclick = function(){
+                       console.log(box)
+            
+                       if (box.style.display=="block"){
+            box.style.display=="none";
+            
+            }
+            else{
+                box.style.display ="block";
+                   }
+                }
+            console.log((box.style.display)
+            
+                     */
+
+        </script>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
